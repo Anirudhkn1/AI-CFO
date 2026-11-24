@@ -1,0 +1,29 @@
+.gal { --accent: #ff5a6e; --accent-2: #8f9bff; min-height: 100vh; color: #f1f1f6; font-family: 'Inter', sans-serif; position: relative; overflow-x: clip; }
+.gal-bg { position: absolute; inset: 0 0 auto 0; height: 78vh; z-index: 0; opacity: .75; -webkit-mask-image: linear-gradient(#000 40%, transparent); mask-image: linear-gradient(#000 40%, transparent); }
+.gal-hero { position: relative; z-index: 2; text-align: center; padding: clamp(70px, 12vw, 150px) 24px 60px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.gal-brand { display: flex; align-items: center; gap: 14px; font-family: 'Space Grotesk', sans-serif; letter-spacing: .26em; font-size: 13px; font-weight: 600; color: #fff; margin-bottom: 18px; }
+.gal-brand i { font-style: normal; color: #ff5a6e; margin-left: 4px; }
+.gal-brand .logo-mark { color: #fff; }
+.gal-hero h1 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: clamp(3rem, 8vw, 7rem); line-height: .95; letter-spacing: -.03em; margin: 0; max-width: 12ch; }
+.gal-hero p { font-size: clamp(1rem, 1.6vw, 1.2rem); max-width: 52ch; margin: 0; }
+.gal-hero small { color: #6f6f86; font-size: 12.5px; letter-spacing: .04em; }
+.gal-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 26px; width: min(1320px, 100% - 48px); margin: 0 auto; padding-bottom: 100px; }
+.gcard { display: block; border-radius: 26px; overflow: hidden; background: #0e0e13; border: 1px solid rgba(255,255,255,.09); transition: transform .5s cubic-bezier(.2,.8,.2,1), border-color .3s, box-shadow .5s; color: #f1f1f6; }
+.gcard:hover { transform: translateY(-8px) scale(1.01); border-color: rgba(255,255,255,.28); box-shadow: 0 40px 80px -30px rgba(0,0,0,.9), 0 0 0 1px rgba(255,255,255,.06); }
+.gcard-preview { position: relative; aspect-ratio: 16/11; background: var(--bg); color: var(--text); padding: 26px; display: flex; flex-direction: column; justify-content: flex-end; gap: 16px; overflow: hidden; font-family: var(--font-body); isolation: isolate; }
+.gp-orb { position: absolute; border-radius: 50%; filter: blur(46px); opacity: .85; z-index: -1; transition: transform 1.2s cubic-bezier(.2,.8,.2,1); }
+.gp-orb-1 { width: 60%; aspect-ratio: 1; background: var(--accent); right: -12%; top: -24%; }
+.gp-orb-2 { width: 48%; aspect-ratio: 1; background: var(--accent-2); left: -10%; bottom: -30%; opacity: .55; }
+.gcard:hover .gp-orb-1 { transform: translate(-26px, 20px) scale(1.15); } .gcard:hover .gp-orb-2 { transform: translate(30px, -16px) scale(1.2); }
+.gp-no { position: absolute; top: 20px; left: 24px; font-family: var(--font-mono); font-size: 12px; letter-spacing: .2em; color: var(--muted); }
+.gp-title { font-family: var(--font-display); font-weight: var(--head-weight); font-size: clamp(2rem, 3.4vw, 2.7rem); line-height: .98; letter-spacing: -.03em; margin: 0; display: flex; flex-direction: column; }
+.gp-title span:last-child { color: var(--accent); font-style: italic; }
+.gp-bar { display: flex; gap: 6px; } .gp-bar i { height: 4px; border-radius: 4px; background: var(--line); flex: 1; } .gp-bar i:nth-child(1) { background: var(--accent); flex: 2; } .gp-bar i:nth-child(2) { background: var(--accent-2); }
+.gp-btn { align-self: flex-start; padding: 8px 16px; border-radius: calc(var(--radius) * .6 + 3px); background: var(--accent); color: var(--on-accent); font-size: 12.5px; font-weight: 600; }
+.gcard-info { padding: 20px 24px 24px; display: grid; gap: 8px; }
+.gcard-row { display: flex; justify-content: space-between; align-items: center; } .gcard-row b { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; letter-spacing: -.01em; }
+.gc-mode { font-size: 10.5px; text-transform: uppercase; letter-spacing: .16em; padding: 4px 10px; border: 1px solid rgba(255,255,255,.18); border-radius: 999px; color: #a9a9bd; }
+.gcard-info p { color: #a2a2b8; font-size: 14px; margin: 0; }
+.gcard-sw { display: flex; gap: 8px; margin-top: 6px; } .gcard-sw span { display: block; } .gcard-sw i { display: block; width: 28px; height: 28px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,.28); }
+.gcard-info small { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; color: #6f6f86; margin-top: 4px; }
+.gal-foot { position: relative; z-index: 2; text-align: center; padding: 30px 24px 60px; font-size: 12.5px; color: #6f6f86; }
